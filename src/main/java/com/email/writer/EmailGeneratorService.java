@@ -82,6 +82,7 @@ public class EmailGeneratorService {
         StringBuilder prompt = new StringBuilder();
         prompt.append("Generate a professional email reply for the following email:");
         if (emailRequest.getTone()!= null && !emailRequest.getTone().isEmpty()) {
+
             prompt.append("Use a").append(emailRequest.getTone()).append(" tone. ");
             //use a professional tone
         }
